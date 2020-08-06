@@ -1,0 +1,227 @@
+.profil {
+  width: 100%;
+  height: 450px;
+
+  .left {
+    width: 25%;
+    height: 100%;
+
+    h5 {
+      font-family: 'Meta Pro Bold';
+      color: $warnaUtama;
+    }
+
+    .opsi {
+      width: 100%;
+      color: $warnaUtama;
+
+      div {
+        width: 100%;
+        height: 60px;
+        border-radius: 30px;
+        font-family: 'Meta Pro Bold';
+        margin-bottom: 1.4em;
+
+        i {
+          font-size: 1.7em;
+        }
+
+        &:last-child {
+          color: #D84545;
+          background-color: #FFBFBF;
+
+          i {
+            color: #D84545;
+          }
+        }
+      }
+
+      .active {
+        background-color: #F3F3F3;
+      }
+    }
+  }
+
+  .right {
+    width: 70%;
+    height: 100%;
+
+    .wrap-img {
+      width: 100%;
+      height: 300px;
+
+      .img {
+        width: 40%;
+        height: 100%;
+        background-color: #f3f3f3;
+        border-radius: 50%;
+      }
+    }
+
+    .data {
+      color: $warnaUtama;
+      font-family: 'Meta Pro';
+
+      label {
+        font-weight: bold;
+      }
+
+      input {
+        border: 1px solid $warnaUtama;
+        height: 40px;
+        border-radius: 4px;
+        padding-left: 1em;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $warnaUtama;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 1px 4px rgba(149, 206, 103, 0.6);
+          outline: 0 none;
+        }
+      }
+
+      .two {
+        width: 100%;
+
+        div {
+          &:first-child {
+            width: 48%;
+          }
+
+          &:last-child {
+            width: 48%;
+          }
+        }
+
+      }
+
+      .button {
+        width: 40%;
+        font-family: 'Meta Pro Bold';
+
+        button {
+          width: 47%;
+          height: 55px;
+          border: none;
+          cursor: pointer;
+          border-radius: 8px;
+
+          &:first-child {
+            background-color: $warnaUtama;
+            color: $putih;
+          }
+
+          &:last-child {
+            background-color: $putih;
+            color: $warnaUtama;
+          }
+        }
+      }
+    }
+
+  }
+
+  .bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    box-shadow: 0 -2px 6px 1px rgba(0, 0, 0, 0.1);
+    display: none;
+
+    .menu {
+      width: 100%;
+      height: 60px;
+      padding: .5em 0;
+
+      &:hover {
+        background-color: #F3F3F3;
+      }
+
+
+      i {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 0.9em;
+        font-weight: bold;
+        font-family: 'Meta Pro Bold';
+        padding: .5em 0;
+      }
+    }
+
+
+    .col-md-4 {
+      color: $warnaUtama;
+
+      &:last-child {
+        color: #D84545;
+
+        i {
+          color: #D84545;
+        }
+      }
+    }
+
+    .active {
+      background-color: #F3F3F3;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .profil {
+    .right {
+      .wrap-img {
+        align-items: center;
+
+        .img {
+          height: 90% !important;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .profil {
+    .left {
+      display: none !important;
+    }
+
+    .right {
+      margin-left: 0 !important;
+      width: 100% !important;
+      padding-bottom: 7em !important;
+    }
+
+    .bottom {
+      display: flex !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profil {
+    .right {
+      .img {
+        width: 55% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 407px) {
+  .profil {
+    .right {
+      .wrap-img {
+        height: 220px !important;
+      }
+    }
+  }
+
+}

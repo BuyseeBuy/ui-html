@@ -1,0 +1,175 @@
+.top-detail {
+  width: 100%;
+  height: 450px;
+
+  .left {
+    width: 60%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 120%;
+      border-radius: 5px;
+    }
+  }
+
+  .right {
+    width: 30%;
+    height: 100%;
+    color: $warnaUtama;
+
+    .n-barang {
+      font-family: 'Meta Pro Bold';
+      color: $warnaUtama;
+    }
+
+    .stok,
+    .harga {
+      font-family: 'Meta Pro Bold';
+    }
+
+    .jumlah {
+      button {
+        width: 10%;
+        border: none;
+        background-color: $warnaUtama;
+        color: $putih;
+        font-weight: bold;
+        font-family: 'Meta Pro Bold';
+        font-size: 1.3em;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.deskripsi {
+  color: $warnaUtama;
+  width: 100%;
+  min-height: 330px;
+
+  h4 {
+    position: relative;
+    font-family: 'Meta Pro Bold';
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100px;
+      height: 2px;
+      background-color: $warnaUtama;
+    }
+  }
+
+  p {
+    font-family: 'Meta Pro';
+  }
+}
+
+.footer-detail {
+  width: 100%;
+  box-shadow: 0 -1px 5px 1px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  position: fixed;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0;
+
+  .warung {
+    font-family: 'Meta Pro';
+
+    h4 {
+      font-family: 'Meta Pro Bold';
+      color: $warnaUtama;
+      font-family: 1em;
+    }
+
+    span {
+      color: #b2b2b2 !important;
+      margin-top: 0 !important;
+      font-size: 0.9em;
+    }
+  }
+
+  .total-harga {
+
+    button {
+      width: 100%;
+      height: 40px;
+      background-color: $warnaUtama;
+      color: $putih;
+      font-family: 'Meta Pro Bold';
+      border: none;
+      border-radius: 6px;
+      padding: 0 1em 0 1em;
+      margin-top: .5em;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .top-detail {
+    height: 760px !important;
+
+    .container {
+      flex-direction: column !important;
+
+      .left {
+        width: 100% !important;
+        height: 80% !important;
+
+        img {
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        width: 100% !important;
+        margin-top: 3em;
+
+        .jumlah {
+          button {
+            width: 45px !important;
+            height: 45px !important;
+
+            font-size: 1.5em !important;
+          }
+        }
+      }
+    }
+  }
+
+  .deskripsi {
+    min-height: 280px !important;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .footer-detail {
+    .warung {
+      h4 {
+        font-size: .9em !important;
+      }
+
+      span {
+        font-size: .8em !important
+      }
+    }
+
+    .total-harga {
+      button {
+        font-size: .9em !important;
+        padding: 0 .6em 0 .6em !important;
+        margin-top: .2em !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .top-detail {
+    height: 660px !important;
+  }
+}

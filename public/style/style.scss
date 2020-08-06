@@ -1,0 +1,342 @@
+@import './font.scss';
+$warnaUtama: #95CE67;
+$putih: #FAF8F0;
+$ijoGelap: #84AA2B;
+$ijoTerang: #81CE80;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+  color: $warnaUtama;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 4px 10px -7px rgba(0, 0, 0, 0.4);
+
+  nav {
+    height: 100px;
+
+    div {
+
+      i {
+        font-size: 2em;
+      }
+
+      button {
+        width: 100px;
+        height: 40px;
+        border-radius: 23px;
+        border: none;
+        font-family: "Meta Pro Bold";
+        cursor: pointer;
+        outline: none;
+
+        &:first-child {
+          background: linear-gradient(to bottom left, $ijoTerang, $warnaUtama);
+          color: $putih;
+        }
+
+        &:last-child {
+          border: 2px solid $warnaUtama;
+          color: $warnaUtama;
+          background: none;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 130px;
+    height: 60px;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 620px;
+
+  .left {
+    width: 45%;
+    height: 100%;
+    color: $warnaUtama;
+
+    .text-header {
+      font-family: "New York Small Bold";
+    }
+  }
+
+  .right {
+    width: 45%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.works {
+  width: 100%;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+
+  .text-header {
+    color: $warnaUtama;
+    font-family: 'New York Small Bold';
+  }
+
+
+  .container {
+    height: 70%;
+    position: relative;
+
+    .shape-1 {
+      width: 2000px;
+      height: 480px;
+      position: absolute;
+      left: -300px;
+      bottom: -500px;
+      z-index: -4;
+    }
+
+    .row {
+      width: 100%;
+
+      .work {
+        width: 30%;
+        border-radius: 13px;
+        box-shadow: 0px 0px 6px -2px rgba(0, 0, 0, 0.9);
+        height: 100px;
+        position: relative;
+        text-align: center;
+        background-color: #FFFFFF;
+        line-height: 120px;
+        color: $warnaUtama;
+        font-family: 'Meta Pro Bold';
+        font-size: 1.1em;
+
+        img {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          top: -70px;
+          left: 120px;
+        }
+      }
+    }
+  }
+
+  button {
+    width: 30%;
+    height: 50px;
+    border-radius: 23px;
+    border: none;
+    font-family: "Meta Pro Bold";
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(to right, $ijoTerang, $warnaUtama);
+    color: $putih;
+  }
+}
+
+.open-web {
+  height: 550px;
+  overflow: hidden;
+
+  .left {
+    width: 80%;
+    height: 100%;
+    position: relative;
+
+    img {
+      width: 80%;
+      height: 680px;
+      position: absolute;
+      top: -170px;
+      left: 0;
+    }
+  }
+
+  .right {
+    color: $warnaUtama;
+
+    .text-header {
+      font-family: 'New York Small Bold';
+    }
+
+    p {
+      font-family: 'Meta Pro';
+    }
+
+    button {
+      width: 100%;
+      height: 50px;
+      border-radius: 23px;
+      border: none;
+      font-family: "Meta Pro Bold";
+      cursor: pointer;
+      outline: none;
+      background: linear-gradient(to bottom left, $ijoTerang, $warnaUtama);
+      color: $putih;
+    }
+  }
+
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: $warnaUtama;
+  color: $putih;
+
+  .header {
+    font-family: 'New York Small Bold';
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    i {
+      font-size: 1.4em !important;
+      padding-right: 1em !important;
+    }
+
+    button {
+      width: 65px !important;
+      height: 30px !important;
+      border-radius: 20px !important;
+      font-size: .75em;
+    }
+  }
+
+  .hero {
+    width: 100%;
+    height: 310px;
+
+
+    .left {
+      width: 100%;
+    }
+
+    .right {
+      display: none;
+
+      p {
+        font-size: .85em;
+      }
+
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  .works {
+    width: 100%;
+    height: 750px;
+
+    .shape-1 {
+      display: none;
+    }
+
+    h3 {
+      font-size: 1.4em;
+    }
+
+    .row {
+      flex-direction: column;
+
+      .work {
+        width: 80% !important;
+        font-size: .9em !important;
+        margin-top: 3.5em;
+
+        img {
+          width: 70px !important;
+          height: 70px !important;
+          top: -40px !important;
+          left: 140px !important;
+        }
+      }
+    }
+
+    button {
+      width: 65%;
+    }
+  }
+
+  .open-web {
+    width: 100%;
+    height: 200px;
+
+    .left {
+      display: none;
+    }
+
+    .right {
+      width: 100%;
+
+      p {
+        font-size: .85em;
+      }
+
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  .footer {
+    font-size: .5em;
+    font-family: 'New York Small Bold';
+    margin-top: 10em !important;
+  }
+}
+
+@media screen and (max-width: 1192px) and (min-width: 551px) {
+  .works {
+    width: 100%;
+    height: 670px;
+
+    .shape-1 {
+      left: -200px !important;
+      bottom: -550px !important;
+    }
+
+    .row {
+      flex-direction: column;
+      align-items: center !important;
+      justify-content: center !important;
+
+      .work {
+        width: 80% !important;
+        margin-top: 3.5em;
+
+        img {
+          width: 80px !important;
+          height: 80px !important;
+          top: -40px !important;
+          left: 140px !important;
+        }
+      }
+    }
+
+    button {
+      width: 65%;
+    }
+  }
+}
+
+@import './form.scss';
+@import './beranda.scss';
+@import './detailProduk.scss';
+@import './profil.scss';
+@import './keranjang.scss';
